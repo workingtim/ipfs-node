@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  ipfs:
+    build:
+      context: .
+    container_name: ipfs
+    restart: always
+    # volumes:
+    #   - ./config:/root/.ipfs
+    logging:
+      driver: json-file
+      options: 
+        max-size: "200k"
+        max-file: "10"
+    ports:
+      - 4001:4001
+      - 5001:5001
+      # - 8080:8080
+      - 4003:4003

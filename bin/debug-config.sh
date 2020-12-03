@@ -1,1 +1,1 @@
-docker-compose run ipfs cat /root/.ipfs/config
+docker-compose run --rm ipfs cat /root/.ipfs/config

@@ -14,11 +14,9 @@ services:
         max-size: "200k"
         max-file: "10"
     ports:
-      # p2p
+      # p2p (tcp and wss)
       - 4001:4001
       # http api
       - 127.0.0.1:5001:5001
-      # wss api
-      - 127.0.0.1:4003:4003
       # gateway
       # - 8080:8080
